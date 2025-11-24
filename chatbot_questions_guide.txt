@@ -1,0 +1,89 @@
+# Grievance System Chatbot - Comprehensive Q&A Guide
+
+## General Questions
+1. How do I submit a grievance?
+   - Go to 'Submit Grievance' in the sidebar. Fill in the title, category, description, and optionally attach files. Our AI will analyze and route it automatically.
+
+2. What information do I need to provide when submitting a grievance?
+   - Clear title, detailed description, relevant category, and any supporting documents or images that can help understand your issue better.
+
+3. How can I track my submitted grievances?
+   - Go to 'My Grievances' to view the status, updates, and responses to all your submitted grievances.
+
+4. How long does it take to get a response?
+   - Response times vary by category and priority. High-priority issues are typically addressed within 24 hours, while others may take 3-5 business days.
+
+## Academic Questions
+1. How do I report an issue with my grades?
+   - Submit under 'Academic' category. Include course code, assignment details, and any relevant communication with faculty.
+
+2. What if I need an extension for an assignment?
+   - Submit a request under 'Academic' category. Include course details, reason for extension, and any supporting documentation.
+
+3. How do I report a problem with online learning materials?
+   - Use 'Academic' category. Specify the course, material type (video, PDF, etc.), and the specific issue you're facing.
+
+## Hostel & Accommodation
+1. How do I report a maintenance issue in my room?
+   - Submit under 'Hostel' category. Be specific about the issue (electrical, plumbing, furniture) and your room number.
+
+2. What if I have a problem with my roommate?
+   - Use 'Hostel' category. Describe the issue and whether you've attempted to resolve it directly with your roommate.
+
+3. How can I request a room change?
+   - Submit under 'Hostel' category. Explain your reason for the change and any relevant details.
+
+## Technical & Infrastructure
+1. What should I do if I'm having trouble with the Wi-Fi?
+   - Submit under 'Infrastructure' category. Include your location, device type, and any error messages.
+
+2. How do I report issues with college facilities?
+   - Use 'Infrastructure' category. Specify the exact location and nature of the problem.
+
+## Administrative Queries
+1. How do I get a copy of my transcript?
+   - Submit under 'Administration' category. Specify if you need an official or unofficial copy and the required format.
+
+2. How can I update my personal information?
+   - Use 'Administration' category. Specify what information needs updating and provide any required documentation.
+
+## System Features
+1. How does the AI analyze my grievance?
+   - Our AI examines the content, context, and sentiment of your submission to determine priority and route it to the appropriate department.
+
+2. Can I attach files to my grievance?
+   - Yes, you can attach relevant documents, images, or screenshots when submitting a grievance.
+
+3. How do I know if my grievance has been received?
+   - You'll receive an email confirmation, and the grievance will appear in your 'My Grievances' section.
+
+## Privacy & Security
+1. Is my personal information secure?
+   - Yes, we follow strict data protection protocols and only authorized personnel can access your information.
+
+2. Can I submit a grievance anonymously?
+   - Some categories allow anonymous submissions. Check the submission form for this option.
+
+## Common Issues & Solutions
+1. I forgot my password. What should I do?
+   - Use the 'Forgot Password' link on the login page to reset your password.
+
+2. The system is running slow. What can I do?
+   - Try refreshing the page, clearing your browser cache, or using a different browser. If the issue persists, report it under 'Technical Issues'.
+
+3. I'm not receiving email notifications. What should I do?
+   - Check your spam/junk folder first. If the issue continues, ensure your email address is correct in your profile settings.
+
+## Feedback & Suggestions
+1. How can I provide feedback about the system?
+   - Use the 'Feedback' option in the main menu to share your thoughts and suggestions.
+
+2. Can I suggest new features for the system?
+   - Yes! We welcome all suggestions. Please use the 'Feedback' option to share your ideas.
+
+## Emergency Contacts
+1. Who should I contact in case of an emergency?
+   - For immediate assistance, please contact campus security at [Emergency Number] or visit the nearest help desk.
+
+2. What qualifies as an emergency grievance?
+   - Issues involving safety, security, or immediate health concerns should be reported directly to the appropriate emergency services.

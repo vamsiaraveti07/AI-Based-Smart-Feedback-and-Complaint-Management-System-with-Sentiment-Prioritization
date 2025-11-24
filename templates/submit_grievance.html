@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}Submit Grievance - AI Grievance System{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow">
+            <div class="card-header bg-warning text-white text-center">
+                <h4><i class="fas fa-file-signature"></i> Submit Grievance</h4>
+            </div>
+            <div class="card-body">
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title/Subject</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Brief description of the issue" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Category</label>
+                        <select class="form-select" id="category" name="category">
+                            {% for category in categories %}
+                                <option value="{{ category }}">{{ category }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Detailed Description</label>
+                        <textarea class="form-control" id="description" name="description" rows="5" placeholder="Detailed information about your grievance or feedback..." required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Upload Image (optional)</label>
+                        <input class="form-control" type="file" id="image" name="image" accept="image/*">
+                    </div>
+                    <div class="mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">Sentiment Analysis Preview</h6>
+                                <div id="sentiment-analysis-preview">
+                                    <p class="card-text text-muted">Type your description to preview sentiment analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-warning">
+                            <i class="fas fa-paper-plane"></i> Submit Grievance
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+$(document).ready(function() {
+    $('#description').on('input', function() {
+        var text = $(this).val();
+        if (text) {
+            $.ajax({
+                url: '{{ url_for("analyze_sentiment_api") }}',
+                type: 'POST',
+                contentType: 'application/json',
+                dataType: 'json',
+                data: JSON.stringify({ 'text': text }),
+                success: function(response) {
+                    $('#sentiment-analysis-preview').html('<div class="alert alert-info"><strong>Sentiment:</strong> ' + response.sentiment + '<br><strong>Priority:</strong> ' + response.priority + '<br><strong>Confidence:</strong> ' + response.confidence + '</div>');
+                },
+                error: function() {
+                    $('#sentiment-analysis-preview').html('<div class="alert alert-danger">Error analyzing sentiment.</div>');
+                }
+            });
+        } else {
+            $('#sentiment-analysis-preview').html('<p class="card-text text-muted">Type your description to preview sentiment analysis.</p>');
+        }
+    });
+});
+</script>
+{% endblock %}
